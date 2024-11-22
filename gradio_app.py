@@ -158,7 +158,6 @@ def load_wonder3d_pipeline(cfg):
     vae = AutoencoderKL.from_pretrained(cfg.pretrained_model_name_or_path, subfolder="vae", revision=cfg.revision)
     unet = UNetMV2DConditionModel.from_pretrained_2d(cfg.pretrained_unet_path, subfolder="unet", revision=cfg.revision, **cfg.unet_from_pretrained_kwargs)
     # unet.enable_xformers_memory_efficient_attention()
-
     try:
         unet.enable_xformers_memory_efficient_attention()
     except AttributeError as e:
