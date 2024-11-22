@@ -1,5 +1,5 @@
 diffusers[torch]==0.19.3
-xformers==0.0.16
+# xformers==0.0.16
 transformers>=4.25.1
 bitsandbytes==0.35.4
 decord==0.6.0
@@ -9,7 +9,7 @@ nerfacc==0.3.3
 trimesh==3.9.8
 pyhocon==0.3.57
 icecream==2.1.0
-PyMCubes==0.1.2
+PyMCubes==0.1.6
 accelerate
 modelcards
 einops
